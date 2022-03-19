@@ -21,4 +21,10 @@ def oxfordLookUp(word):
         # print(defin)
 
     return list_of_resp
-# nev = oxfordLookUp('Great')
+# nev = oxfordLookUp('Great')jn
+print(oxfordLookUp('Great'))
+# print(nev)
+print(nev[0])
+print(nev[1])
+# print(nev[2])
+#
