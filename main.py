@@ -5,7 +5,6 @@ from oxfordLookUp import oxfordLookUp
 
 API_TOKEN = '5260449495:AAEb13FTErfPWxV64xw67JPCGzq7SEKN0_w'
 translator = Translator()
-# Configure logging
 logging.basicConfig(level=logging.INFO)
 
 # Initialize bot and dispatcher
@@ -23,6 +22,7 @@ async def send_welcome(message: types.Message):
 
 @dispatcher.message_handler()
 async def tarjimon(message: types.Message):
+    a=9
     lang = translator.detect(message.text).lang
     print(lang)
     if len(message.text.split()) > 1:
